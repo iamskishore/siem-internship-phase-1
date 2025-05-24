@@ -45,11 +45,13 @@ SIEM (Security Information and Event Management) is a security solution that pro
 In this lab environment, a VMware hypervisor hosts virtual machines, including a **Kali Linux attacker machine** and **Windows victim machines**. Using Kali, various attacks are simulated to generate logs on the Windows machines, where **Sysmon** is pre-configured for detailed system activity monitoring. These logs are collected and forwarded using **Elastic Agent** (or Winlogbeat) to an **Elastic Stack (ELK)** instance, where **Elasticsearch** stores the data and **Kibana** provides visualization and analysis. The purpose is to simulate real-world attack scenarios and observe system behavior through log correlation and threat detection dashboards. This setup is inspired by the lab guide available at [Intro to ELK in the Cloud – IntroClass by Josh Stroschein](https://github.com/strandjs/IntroLabs/blob/master/IntroClassFiles/Tools/IntroClass/md/elk_in_the_cloud.md).
 
 ## Use Cases
+
 1. [ RDP Brute Force Detection](<writeups/Use Case 1 Brute Force Detection/Readme.md>)
 	Techniques: Credential stuffing, repeated failed login attempts Event ID: `4625` (Failed login – Windows Security Log) Tools: Hydra, CrackMapExec
 	Goal: Detect brute force attacks by identifying multiple failed login attempts against valid or invalid user accounts.
- 
-  2 . [ Suspicious Logon Time - After login Activity](<writeups/Use Case 2 Suspicious Logon Times/Readme.md>)
+	
+2. [ Suspicious Logon Time - After login Activity](<writeups/Use Case 2 Suspicious Logon Times/Readme.md>)
 Techniques: After-hours logon by adversaries or insider threats
 Event ID: `4624` (Successful logon)
 Goal: Detect logons that occur outside normal working hours (9 AM – 7 PM) to identify possible unauthorized access.
+ 
