@@ -49,4 +49,7 @@ In this lab environment, a VMware hypervisor hosts virtual machines, including a
 1. [ RDP Brute Force Detection](<writeups/Use Case 1 Brute Force Detection/Readme.md>)
 	Techniques: Credential stuffing, repeated failed login attempts Event ID: `4625` (Failed login – Windows Security Log) Tools: Hydra, CrackMapExec
 	Goal: Detect brute force attacks by identifying multiple failed login attempts against valid or invalid user accounts.
-	
+2 . [ Suspicious Logon Time - After login Activity](<writeups/Use Case 2 Suspicious Logon Times/Readme.md>)
+Techniques: After-hours logon by adversaries or insider threats
+Event ID: `4624` (Successful logon)
+Goal: Detect logons that occur outside normal working hours (9 AM – 7 PM) to identify possible unauthorized access.
