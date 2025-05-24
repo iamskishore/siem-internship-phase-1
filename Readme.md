@@ -23,7 +23,7 @@ The main goals of this phase are to:
 
 SIEM (Security Information and Event Management) is a security solution that provides real-time visibility into an organization’s IT environment. It collects, aggregates, and analyzes log data from various systems to detect suspicious behavior, trigger alerts, and support incident response. A SIEM acts as the central nervous system of a Security Operations Center (SOC), enabling security teams to identify, prioritize, and respond to potential threats more efficiently
 
-### Real-World Use Cases of SIEM
+## Real-World Use Cases of SIEM
 - Log Collection
 	- Gathers logs from endpoints, servers, firewalls, applications, cloud services, and more.
 	- Standardizes and centralizes data for easier analysis.
@@ -33,14 +33,20 @@ SIEM (Security Information and Event Management) is a security solution that pro
 - Correlation
 	-  Connects related events across multiple systems to reveal the full scope of an attack.
 	- Example: A failed login attempt + privilege escalation + data exfiltration = Possible insider threat.
-# Tools Used
+## Tools Used
 
 - Windows Virtual Machine (VM) in AWS(EC2)
 - **Sysmon** – System Monitor for Sysinternals
 - Elastic Stack (Elasticsearch + Kibana + Logstash)
 - Elastic Agent 
 
-### Steps Performed
+## Steps Performed
 
 In this lab environment, a VMware hypervisor hosts virtual machines, including a **Kali Linux attacker machine** and **Windows victim machines**. Using Kali, various attacks are simulated to generate logs on the Windows machines, where **Sysmon** is pre-configured for detailed system activity monitoring. These logs are collected and forwarded using **Elastic Agent** (or Winlogbeat) to an **Elastic Stack (ELK)** instance, where **Elasticsearch** stores the data and **Kibana** provides visualization and analysis. The purpose is to simulate real-world attack scenarios and observe system behavior through log correlation and threat detection dashboards. This setup is inspired by the lab guide available at [Intro to ELK in the Cloud – IntroClass by Josh Stroschein](https://github.com/strandjs/IntroLabs/blob/master/IntroClassFiles/Tools/IntroClass/md/elk_in_the_cloud.md).
 
+## Use Cases
+
+1. [ RDP Brute Force Detection](<writeups/Use Case 1 Brute Force Detection/Readme.md>)
+	Techniques: Credential stuffing, repeated failed login attempts Event ID: `4625` (Failed login – Windows Security Log) Tools: Hydra, CrackMapExec
+	Goal: Detect brute force attacks by identifying multiple failed login attempts against valid or invalid user accounts.
+	
