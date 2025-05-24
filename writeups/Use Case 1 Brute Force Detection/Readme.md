@@ -13,7 +13,7 @@ In Windows, an Event ID is a unique numerical identifier assigned to specific e
 
 ## Rule Setup in  Kibana
 
-![RDP Rule Screenshot](screenshots/set-rule-rdp-dec.png)
+![RDP Rule Screenshot](../../screenshots/set-rule-rdp-dec.png)
 
 
 # Attack Simulation
@@ -28,6 +28,7 @@ This try to enumerate password of the administrator, If the credentials are inc
 
 This detection highlights potential brute-force behavior by tracking accounts or IPs with over 5 failed logins in a short time frame. It enables SOC teams to swiftly detect and respond to unauthorized access attempts.
 
-![](screenshots/Detection-rdp.png)
+![Alt text](../../screenshots/Detection-rdp.png)
+
 
 
