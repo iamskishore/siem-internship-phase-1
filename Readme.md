@@ -59,9 +59,11 @@ In this lab environment, a VMware hypervisor hosts virtual machines, including a
     **Lateral movement** refers to the techniques that a cyberattacker uses, after gaining initial access, to move deeper into a network in search of sensitive data and other high-value assets. After entering the network, the attacker maintains ongoing access by moving through the compromised environment and obtaining increased privileges using various tools.
     
 4. [Log Tampering](<writeups/Use Case 4 Log Tampering/Readme.md>)
+
     Log tampering, a technique used to modify or delete log entries, can be simulated to practice log analysis and incident response. This simulation can help organizations understand the impact of log tampering and develop effective detection and prevention strategies
     
-5.  [Hidden User Creation](<writeups/Use Case  5 Hidden User Creation/Readme.md>)
+5. [Hidden User Creation](<writeups/Use Case 5 Hidden User Creation/Readme.md>)
+
 	  Hidden user creation techniques are methods used to establish user accounts that are not readily visible in the user interface or standard user management tools. This can be done for various reasons, including security, persistence, or evading detection
 # Learning Outcome
 
