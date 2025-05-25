@@ -51,7 +51,36 @@ In this lab environment, a VMware hypervisor hosts virtual machines, including a
 	Goal: Detect brute force attacks by identifying multiple failed login attempts against valid or invalid user accounts.
 	
 2. [ Suspicious Logon Time - After login Activity](<writeups/Use Case 2 Suspicious Logon Times/Readme.md>)
-Techniques: After-hours logon by adversaries or insider threats
-Event ID: `4624` (Successful logon)
-Goal: Detect logons that occur outside normal working hours (9 AM – 7 PM) to identify possible unauthorized access.
- 
+    Techniques: After-hours logon by adversaries or insider threats
+    Event ID: `4624` (Successful logon)
+    Goal: Detect logons that occur outside normal working hours (9 AM – 7 PM) to identify possible unauthorized access.
+
+3. [Lateral Movement via RDP](<writeups/Use Case 3 Lateral Movement Via RDP/Readme.md>)
+    **Lateral movement** refers to the techniques that a cyberattacker uses, after gaining initial access, to move deeper into a network in search of sensitive data and other high-value assets. After entering the network, the attacker maintains ongoing access by moving through the compromised environment and obtaining increased privileges using various tools.
+    
+4. [Log Tampering](<writeups/Use Case 4 Log Tampering/Readme.md>)
+    Log tampering, a technique used to modify or delete log entries, can be simulated to practice log analysis and incident response. This simulation can help organizations understand the impact of log tampering and develop effective detection and prevention strategies
+    
+5.  [Hidden User Creation](<writeups/Use Case  5 Hidden User Creation/Readme.md>)
+	  Hidden user creation techniques are methods used to establish user accounts that are not readily visible in the user interface or standard user management tools. This can be done for various reasons, including security, persistence, or evading detection
+# Learning Outcome
+
+- **Elastic Stack Installation & Setup**
+- 
+    - Install and configure **Elasticsearch**, **Kibana**, and optionally **Logstash** and **Beats**.
+    - Learn how to collect and visualize Windows logs using **Winlogbeat** or **Elastic Agent**.
+    - 
+- **Understand Key Windows Security Events**
+- 
+    - Identify critical Event IDs for account creation (`4720`) and privilege escalation (`4728`, `4732`, `4756`).
+    - Understand how attackers abuse these for persistence and elevated access.
+        
+- **Build Detection Rules with KQL**
+    
+    - Write and test **Kibana Query Language (KQL)** to detect user creation and group membership changes.
+    - Learn to correlate event logs with user behavior to identify malicious activity.
+        
+- **Visualize and Investigate Alerts**
+    
+    - Use **Kibana Dashboards** and **Elastic Security** to visualize alerts.
+    - Begin triaging security events and simulate SOC analyst workflows.
