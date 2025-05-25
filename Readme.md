@@ -71,12 +71,12 @@ In this lab environment, a VMware hypervisor hosts virtual machines, including a
 # Learning Outcome
 
 - **Elastic Stack Installation & Setup**
-- 
+
     - Install and configure **Elasticsearch**, **Kibana**, and optionally **Logstash** and **Beats**.
     - Learn how to collect and visualize Windows logs using **Winlogbeat** or **Elastic Agent**.
 
 - **Understand Key Windows Security Events**
-- 
+
     - Identify critical Event IDs for account creation (`4720`) and privilege escalation (`4728`, `4732`, `4756`).
     - Understand how attackers abuse these for persistence and elevated access.
         
