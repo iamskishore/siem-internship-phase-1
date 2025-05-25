@@ -16,9 +16,9 @@
    to launch malicious code or gain access to other hosts in the network. In the [8.9 release](https://www.elastic.co/blog/whats-new-elastic-security-8-9-0), we introduce additional anomaly detection jobs and rules in this package capable of detecting lateral movement attacks for the most commonly abused operating system feature: Windows RDP.  
    
    The Lateral Movement Detection package is generally available to Elastic® users in 8.9. With this Advanced Analytics use case, users can detect malicious file transfers and RDP session activities.
-   ![Add Lateral Movement Dection](screenshots/Add-Lateral-inta.png)
+   ![Add Lateral Movement Dection](../../screenshots/Add-Lateral-inta.png)
    **Agent install**
-   ![Agent Install](screenshots/lateral-agent-install.png)
+   ![Agent Install](../../screenshots/lateral-agent-install.png)
 **Enabling security detection rules**
 To enable and use the installed rules, navigate to **Security > Alerts > Manage rules** and select **Load Elastic prebuild rules and timeline templates**. If you’re running in Elastic Cloud, this step is done automatically.
 use the Lateral Movement Detection tag to filter for all of the detection rules under this package. The rules based on anomaly detection jobs are triggered when the anomaly score surpasses a predetermined threshold, which can be customized by duplicating the detection rule.

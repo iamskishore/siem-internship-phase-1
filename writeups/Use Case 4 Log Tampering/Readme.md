@@ -30,7 +30,8 @@
 
 ###  event code:
    **Event ID 1102** indicates that the Windows Security audit log was cleared. This event is logged regardless of whether the "Audit System Events" audit policy is enabled or disabled. It provides information about the user who cleared the log, including their Security ID, Account Name, Account Domain, and Logon ID[more info](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-1102)
-   ![Log Tempering](screenshots/Log-temp.png)
+   ![Log Tempering](../../screenshots/Log-temp.png)
+   
    **Rule add**
-   ![Rule add](screenshots/addrulelog.png)
+   ![Rule add](../../screenshots/addrulelog.png)
    

@@ -13,5 +13,5 @@ event.code: ("4624" or "4625") and user.name : "Administrator" AND (
   @timestamp >= now/d + 19h
 )
 ```
-![Suspicious logon time](screenshots/Suspicious-logon-time.png)
+![Suspicious logon time](../../screenshots/Suspicious-logon-time.png)
 Elastic successfully identified and displayed the unauthorized login attempt, capturing key details such as the username, timestamp, and logon type. This confirms the effectiveness of the detection logic and highlights the critical role of time-based access controls in strengthening network security.

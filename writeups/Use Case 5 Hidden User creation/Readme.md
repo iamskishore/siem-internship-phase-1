@@ -10,16 +10,16 @@ Left undetected, such accounts can enable long-term system compromise.
 
 ## User Creation && Add local Administrators Group
 
-![User tom](screenshots/userC.png)
+![User tom](../../screenshots/userC.png)
 
 ## Hidden User Creation Detection in Elastic
 
-![r](screenshots/userAccid.png)
+![r](../../screenshots/userAccid.png)
 
 ## Rule Creation for Suspicious User Creation Detection 
 
-![t](screenshots/userCreationidentify.png)
+![t](../../screenshots/userCreationidentify.png)
 
 ## Alert 
 
-![er](screenshots/logalert.png)
+![er](../../screenshots/logalert.png)
